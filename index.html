@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+	<head>
+		<title>CSS</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width" initial-scale=1>
+	</head>
+		<body>
+				<!-- Шапка Сайта -->
+			<header class="header">
+				<div class="container">
+					<div class="header__row">
+
+						<div class="header__left">
+							<div class="header__log"><img src="img/logo.png" alt="log"></div>
+							<a href='' class="header__product link">Products</a>
+							<a href='' class="header__contact link">Contact us</a>
+						</div>
+	 
+						<div class="header__right">
+							<div class="header__lang"><img src="img/english.png" alt=""></div>
+							<div class="header__switch"><img src="img/switch.png" alt=""></div>
+							<button id="open-sing" class="sing-in header__sign">Sing in</button>
+							<button id="open-reg" class="reg header__reg">Register</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- /Шапка Сайта -->
+
+			<!-- страница с вопросами -->
+			<div class="faq">
+				<div class="container">
+					<div class="faq__title title">FAQ</div>
+					<div class="faq__row">
+						<div class="faq__question question">
+
+							<div class="question__header">
+								<div class="question__title">Question 1</div>
+							</div>
+							<div class="question__content">
+								<div class="question__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</div>
+							</div>
+						</div>	
+
+						<div class="faq__question question">
+							
+							<div class="question__header">
+								<div class="question__title">Question 2</div>
+							</div>
+							<div class="question__content">
+								<div class="question__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</div>
+							</div>
+						</div>	
+
+						<div class="faq__question question">
+							
+							<div class="question__header">
+								<div class="question__title">Question 3</div>
+							</div>
+							<div class="question__content">
+								<div class="question__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</div>
+							</div>
+						</div>	
+
+						<div class="faq__question question">
+							
+							<div class="question__header">
+								<div class="question__title">Question 4</div>
+							</div>
+							<div class="question__content">
+								<div class="question__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<!-- /страница с вопросами -->
+
+
+			<!-- Кнопка sing in -->
+			<div class="modal" id="sing">
+				<div class="modal__window">
+					<form>
+					  <label for="email">Email:</label>
+					  <input type="email" id="email" name="email" required>
+
+					  <label for="password">Password:</label>
+					  <div class="password-container">
+					    <input type="password" id="password" name="password" required>
+					    <span class="toggle-password" onclick="togglePasswordVisibility()"></span>
+					  </div>
+
+					  <label for="username">Username:</label>
+					  <input type="text" id="username" name="username" required>
+
+					  <button type="submit">Sign In</button>
+					</form>
+					<button class="close-btn" id="close-sing">X</button>
+				</div> 
+			</div>
+
+
+			<!-- Кнопка Register -->
+			<div class="modal" id="reg">
+				<div class="modal__window">
+					<form>
+					  <label for="email">Email:</label>
+					  <input type="email" id="email" name="email" required>
+
+					  <label for="password">Password:</label>
+					  <div class="password-container">
+					    <input type="password" id="password" name="password" required>
+					    <span class="toggle-password" onclick="togglePasswordVisibility()"></span>
+					  </div>
+
+					  <label for="username">Username:</label>
+					  <input type="text" id="username" name="username" required>
+
+					  <button type="submit">Sign In</button>
+					</form>
+					<button class="close-btn" id="close-reg">X</button>
+				</div>
+			</div>
+			<div class="container">
+				<div class="title">Photo gallery</div>
+				<input type="file" accept="image/*" onchange="loadFile(event)">
+				<div class="image-gallery">
+					<div id="image-container"></div> 
+				</div>
+			</div>
+		<script src="js/javascript.js"></script>
+	</body>
+	
+</html>
